@@ -4,7 +4,7 @@ const request =  require('supertest');
 const {app} = require('./../server')
 const {Todo} = require('./../models/todo')
 
-beforeEach((done) =>  {
+beforeEach((done) =>  { //run before case test
   Todo.remove({}).then(() =>  done());
 });
 
